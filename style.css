@@ -5,9 +5,55 @@
   font-family: "Poppins", sans-serif;
 }
 
+/* BODY BACKGROUND */
 body {
   background: linear-gradient(135deg, #ffd4e0, #ffe7d8, #ffffff);
   overflow-x: hidden;
+  padding-top: 80px; /* so navbar won't overlap */
+}
+
+/* NAVBAR */
+header {
+  width: 100%;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: #4c2e73;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #4c2e73;
+  font-weight: 600;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #000;
+  transform: scale(1.05);
 }
 
 /* HERO SECTION */
