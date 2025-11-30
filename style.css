@@ -188,3 +188,149 @@ header {
   margin-bottom: 8px;
   color: #555;
 }
+/* ---------- PROJECT PAGE SECTIONS ---------- */
+
+.project-hero {
+  padding: 110px 10% 70px;
+  text-align: center;
+  background: #333333;
+  color: #ffffff;
+}
+
+.project-hero h1 {
+  font-size: 34px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.project-hero p {
+  max-width: 900px;
+  margin: 8px auto;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+/* GitHub button */
+.btn-github {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 26px;
+  border-radius: 30px;
+  border: none;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  background: #05c3ff;
+  color: #ffffff;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.btn-github:hover {
+  background: #0492c2;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+}
+
+/* Phase sections */
+
+.phase-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.phase-title {
+  display: inline-block;
+  background: #ffffff;
+  padding: 14px 28px;
+  border-radius: 18px;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+
+.phase-card {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+}
+
+.phase-card img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.phase-note {
+  margin-top: 15px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.phase-intro {
+  max-width: 900px;
+  margin: 0 auto 30px;
+  color: #555;
+  line-height: 1.7;
+}
+
+/* Business ideas cards */
+
+.ideas-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.idea-card {
+  background: #111111;
+  color: #ffffff;
+  width: 280px;
+  max-width: 100%;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  text-align: left;
+}
+
+.idea-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.idea-card h4 {
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.idea-card ul {
+  padding-left: 18px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+.idea-card li {
+  margin-bottom: 5px;
+}
+
+/* Small responsive tweak */
+@media (max-width: 768px) {
+  .project-hero {
+    padding: 100px 6% 60px;
+  }
+
+  .phase-section {
+    padding: 50px 6%;
+  }
+
+  .idea-card {
+    width: 100%;
+  }
+}
+
