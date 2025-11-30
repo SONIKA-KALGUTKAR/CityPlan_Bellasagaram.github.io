@@ -166,7 +166,7 @@ header {
   line-height: 1.7;
 }
 
-/* TEAM SECTION */
+/* TEAM SECTION (Home + Collabz) */
 .team {
   padding: 60px 10%;
   text-align: center;
@@ -397,47 +397,39 @@ header {
 
 /* ---------- ABOUT PAGE ---------- */
 
-.about-hero {
-  padding: 110px 10% 50px;
+/* Top intro section */
+.about-header {
   text-align: center;
+  padding: 110px 10% 40px;
 }
 
-.about-hero h1 {
-  font-size: 30px;
+.about-header h1 {
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 22px;
-  color: #333;
+  color: #4c2e73;
+  margin-bottom: 18px;
 }
 
-.about-card {
+.about-intro-text {
   max-width: 900px;
   margin: 0 auto;
-  background: #111111;
-  color: #ffffff;
-  padding: 26px 24px;
-  border-radius: 20px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
-  text-align: left;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.7;
 }
 
-.about-card p {
-  line-height: 1.8;
-  font-size: 15px;
-  margin-bottom: 10px;
-}
-
-/* Meet the Team */
-
+/* Meet the team section */
 .about-team-section {
-  padding: 50px 10% 60px;
-  text-align: center;
+  padding: 0 10% 60px;
 }
 
 .about-team-heading {
+  text-align: center;
   font-size: 26px;
   font-weight: 700;
+  margin-top: 20px;
   margin-bottom: 30px;
-  color: #333;
+  color: #4c2e73;
 }
 
 .about-team-grid {
@@ -447,38 +439,56 @@ header {
   justify-content: center;
 }
 
+/* Pastel cards */
 .about-team-card {
-  background: #111111;
-  color: #ffffff;
+  background: linear-gradient(135deg, #ffeaff, #fff8ff);
+  color: #333;
   width: 280px;
   max-width: 100%;
-  padding: 24px 22px;
-  border-radius: 22px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  padding: 22px;
+  border-radius: 20px;
+  border-top: 4px solid #6a3ea1;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
   text-align: left;
 }
 
 .about-team-card h3 {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 6px;
+  color: #4c2e73;
 }
 
 .about-usn {
   font-size: 13px;
-  margin-bottom: 6px;
-  color: #dddddd;
-}
-
-.about-role {
-  font-size: 14px;
-  font-weight: 500;
   margin-bottom: 10px;
+  color: #666;
 }
 
+/* Skills */
+.about-role {
+  font-size: 15px;
+  font-weight: 600;
+  color: #4c2e73;
+  margin-bottom: 6px;
+}
+
+.about-skills {
+  list-style-type: disc;
+  padding-left: 18px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #444;
+}
+
+.about-skills li {
+  margin-bottom: 4px;
+}
+
+/* Description */
 .about-desc {
   font-size: 14px;
+  color: #555;
   line-height: 1.7;
-  color: #e5e5e5;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -537,19 +547,19 @@ header {
     padding: 100px 6% 50px;
   }
 
-  .about-hero {
-    padding: 100px 6% 40px;
-  }
-
-  .about-card {
-    padding: 22px 18px;
+  .about-header {
+    padding: 100px 6% 30px;
   }
 
   .about-team-section {
-    padding: 40px 6% 50px;
+    padding: 0 6% 50px;
   }
 
   .about-team-card {
     width: 100%;
+  }
+
+  .team {
+    padding: 50px 6%;
   }
 }
