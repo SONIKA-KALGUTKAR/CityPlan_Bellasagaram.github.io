@@ -1,324 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bellasagaram</title>
-
-<!-- Google Font -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-
-<style>
-/* ---------- GLOBAL ---------- */
-* {
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    background: linear-gradient(135deg, #020617, #0f172a);
-    font-family: "Poppins", Arial, sans-serif;
-    color: #0f172a;
-}
-
-/* ---------- NAVIGATION BAR ---------- */
-.navbar {
-    width: 100%;
-    background: rgba(15, 23, 42, 0.95);
-    padding: 16px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    backdrop-filter: blur(10px);
-    box-shadow: 0 4px 16px rgba(15, 23, 42, 0.6);
-}
-
-.logo {
-    font-size: 26px;
-    font-weight: 700;
-    color: #e5e7eb;
-    letter-spacing: 2px;
-}
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 22px;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li a {
-    text-decoration: none;
-    color: #e5e7eb;
-    font-size: 15px;
-    font-weight: 500;
-    position: relative;
-    padding-bottom: 4px;
-    transition: color 0.2s ease;
-}
-
-.navbar ul li a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    height: 2px;
-    width: 0;
-    background: #38bdf8;
-    transition: width 0.25s ease;
-}
-
-.navbar ul li a:hover {
-    color: #38bdf8;
-}
-
-.navbar ul li a:hover::after {
-    width: 100%;
-}
-
-/* ---------- MAIN WHITE BOX ---------- */
-.container {
-    width: 85%;
-    max-width: 1100px;
-    margin: 120px auto 40px auto;
-    background: #f9fafb;
-    padding: 32px 28px 40px 28px;
-    border-radius: 18px;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.35);
-}
-
-/* ---------- INTRO HEADING BLACK BOX ---------- */
-.intro-box {
-    background: #0f172a;
-    padding: 16px;
-    border-radius: 14px;
-    margin-bottom: 24px;
-    text-align: center;
-}
-
-.intro-box h1 {
-    font-size: 34px;
-    color: #e5e7eb;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-/* ---------- INTRO TEXT ---------- */
-.info {
-    text-align: center;
-    font-size: 17px;
-    line-height: 28px;
-    margin-top: 16px;
-    margin-bottom: 44px;
-    color: #111827;
-}
-
-.info span.label {
-    font-weight: 600;
-    color: #0f172a;
-}
-
-/* ---------- TABLE ---------- */
-.table-wrapper {
-    display: flex;
-    justify-content: center;
-}
-
-table {
-    width: 70%;
-    border-collapse: collapse;
-    font-size: 16px;
-    background: #ffffff;
-    border-radius: 12px;
-    overflow: hidden;
-    box-shadow: 0 10px 25px rgba(15, 23, 42, 0.15);
-}
-
-th, td {
-    border: 1px solid #e5e7eb;
-}
-
-th {
-    background: #0f172a;
-    color: #e5e7eb;
-    padding: 12px;
-    font-size: 17px;
-    font-weight: 600;
-}
-
-td {
-    padding: 12px 10px;
-    text-align: center;
-    color: #111827;
-}
-
-tr:nth-child(even) td {
-    background: #f3f4f6;
-}
-
-/* ---------- BLACK CONTENT SECTIONS ---------- */
-.section {
-    background: #0f172a;
-    color: #e5e7eb;
-    padding: 32px 26px;
-    border-radius: 18px;
-    margin: 40px auto 30px auto;
-    width: 85%;
-    max-width: 1100px;
-    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.6);
-}
-
-.section h2 {
-    text-align: left;
-    font-size: 24px;
-    margin-bottom: 12px;
-    font-weight: 600;
-    border-left: 4px solid #38bdf8;
-    padding-left: 10px;
-}
-
-.section p {
-    font-size: 16px;
-    line-height: 26px;
-    margin-top: 4px;
-    margin-bottom: 12px;
-}
-
-.section p::before {
-    content: "";
-}
-
-/* ---------- RESPONSIVE ---------- */
-@media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .navbar ul {
-        flex-wrap: wrap;
-        gap: 12px;
-    }
-
-    .container, .section {
-        width: 92%;
-        padding: 22px 18px;
-    }
-
-    table {
-        width: 100%;
-    }
-
-    .intro-box h1 {
-        font-size: 28px;
-    }
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bellasagaram City Design</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- ---------- NAV BAR ---------- -->
-<div class="navbar">
-    <div class="logo">CITY DESIGN</div>
+  <!-- HERO SECTION -->
+  <section class="hero">
 
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="project.html">Project</a></li>
-        <li><a href="sonika.html">sonika</a></li>
-        <li><a href="anoosha.html">anoosha</a></li>
-        <li><a href="namrata.html">namrata</a></li>
-        <li><a href="collabz.html">Collabz</a></li>
-    </ul>
-</div>
+    <div class="hero-left">
+      <h1>INTRODUCTION TO <br> BELLASAGARAM CITY DESIGN</h1>
 
-<!-- ---------- MAIN CONTENT ---------- -->
-<div class="container">
-
-    <!-- INTRO HEADING -->
-    <div class="intro-box">
-        <h1>Introduction</h1>
+      <p class="hero-desc">
+        A creative and analytical approach to designing a sustainable coastal city through 
+        the concepts of Design & Analysis of Algorithms.
+      </p>
     </div>
 
-    <!-- INTRO TEXT -->
-    <div class="info">
-        <div><span class="label">Course:</span> Design and Analysis of Algorithms (DAA)</div>
-        <div><span class="label">Course Code:</span> 24ECSC205</div>
-        <div><span class="label">Course Instructor:</span> Prof. Prakash Hegade</div>
-        <div><span class="label">University:</span> KLE Technological University</div>
-        <div><span class="label">Project Topic:</span> City Design</div>
+    <div class="hero-right">
+      <div class="info-card">
+        <h2>Course Details</h2>
+        <p><strong>Course:</strong> DAA</p>
+        <p><strong>Course Code:</strong> 24ECSC2O5</p>
+        <p><strong>Instructor:</strong> Prof. Prakash Hegade</p>
+        <p><strong>University:</strong> KLE Technological University</p>
+        <p><strong>Topic:</strong> City Design</p>
+      </div>
     </div>
 
-    <!-- TABLE -->
-    <div class="table-wrapper">
-        <table>
-            <tr>
-                <th>Name</th>
-                <th>USN</th>
-            </tr>
-            <tr>
-                <td>Sonika.A.Kalgutkar</td>
-                <td>01FE24BCS029</td>
-            </tr>
-            <tr>
-                <td>Anoosha.R.Hokrani</td>
-                <td>01FE24BCS208</td>
-            </tr>
-            <tr>
-                <td>Namrata.G.Shanbhag</td>
-                <td>01FE24BCS101</td>
-            </tr>
-        </table>
+  </section>
+
+  <!-- SHORT COURSE DETAILS -->
+  <section class="short-info">
+    <div class="info-box">
+      <h3>What is the course about?</h3>
+      <p>
+        DAA helps us understand how complex real-world problems can be broken into simple,
+        logical steps. It encourages curiosity and analytical thinking by revealing patterns
+        hidden in nature, technology, and daily life.
+      </p>
     </div>
 
-</div>
+    <div class="info-box">
+      <h3>Real-time Applications</h3>
+      <p>
+        Algorithms guide everything around us — GPS routes, search engine suggestions,
+        fraud detection, recommendations, and more. They transform small logical ideas into
+        powerful systems used by millions.
+      </p>
+    </div>
+  </section>
 
-<!-- ---------- BLACK SECTIONS ---------- -->
+  <!-- ABOUT CITY -->
+  <section class="about-city">
+    <h2>About Bellasagaram</h2>
+    <p>
+      Bellasagaram, meaning “The Sweet Coastal City,” is inspired by Anakapalli’s heritage, 
+      jaggery market, fertile lands, and coastal power. The city blends tradition with modern
+      infrastructure to create a sustainable and smart coastal hub.
+    </p>
+    <p>
+      Its development model integrates ports, fisheries, solar energy systems, and recycling
+      industries. By using its coastal advantage, the city aims to boost exports, generate
+      employment, and build a green and self-sustaining economy where culture and innovation
+      flourish together.
+    </p>
+  </section>
 
-<div class="section">
-    <h2>What is the course about?</h2>
-    <p>
-        Design and Analysis of Algorithms (DAA) is about learning how to solve problems in an efficient and structured way.
-        In this course, we study different strategies to design algorithms, measure their performance, and choose the best
-        approach for a given problem.
-    </p>
-    <p>
-        The ideas from this course are used in almost every area of computer science and technology &mdash; from simple
-        programs to large-scale systems that handle huge amounts of data.
-    </p>
-</div>
+  <!-- TEAM MEMBERS -->
+  <section class="team">
+    <h2>Team Members</h2>
 
-<div class="section">
-    <h2>What data structures and algorithms have we studied?</h2>
-    <p>
-        We have worked with basic data structures like arrays, strings, linked lists, stacks, and queues, which help us
-        store and manage data in different ways.
-    </p>
-    <p>
-        We also explored trees, graphs, and hash tables, which are useful for representing relationships, hierarchies, and
-        fast lookups. Along with this, we studied searching, sorting, greedy methods, divide and conquer, dynamic
-        programming, and graph algorithms.
-    </p>
-</div>
+    <div class="team-container">
 
-<div class="section">
-    <h2>How does this connect to real-time applications?</h2>
-    <p>
-        Algorithms are used in many applications we use every day. Navigation apps use shortest path algorithms like
-        Dijkstra’s to find the quickest route. E-commerce websites use sorting and searching to show relevant products.
-    </p>
-    <p>
-        In our City Design project, we can use these ideas to plan roads, optimize routes, place important facilities,
-        and manage resources efficiently, making the city smarter and more organized.
-    </p>
-</div>
+      <div class="team-card">
+        <h3>Team Member 1</h3>
+        <p><strong>Name:</strong> Sonika Kalgutkar</p>
+        <p><strong>Roll:</strong> 210</p>
+        <p><strong>USN:</strong> 01FE24BCS029</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Team Member 2</h3>
+        <p><strong>Name:</strong> Anoosha Hokrani</p>
+        <p><strong>Roll:</strong> 266</p>
+        <p><strong>USN:</strong> 01FE24BCS208</p>
+      </div>
+
+      <div class="team-card">
+        <h3>Team Member 3</h3>
+        <p><strong>Name:</strong> Namrata Shanbhag</p>
+        <p><strong>Roll:</strong> 227</p>
+        <p><strong>USN:</strong> 01FE24BCS101</p>
+      </div>
+
+    </div>
+  </section>
 
 </body>
 </html>
