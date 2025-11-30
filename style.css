@@ -188,149 +188,163 @@ header {
   margin-bottom: 8px;
   color: #555;
 }
-/* ---------- PROJECT PAGE SECTIONS ---------- */
+/* ---------- PROJECT PAGE LAYOUT ---------- */
 
 .project-hero {
-  padding: 110px 10% 70px;
+  padding: 110px 10% 40px;
   text-align: center;
-  background: #333333;
-  color: #ffffff;
 }
 
 .project-hero h1 {
-  font-size: 34px;
+  font-size: 32px;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  color: #333;
 }
 
-.project-hero p {
+.project-card {
   max-width: 900px;
-  margin: 8px auto;
-  line-height: 1.8;
-  font-size: 15px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 30px 28px;
+  border-radius: 20px;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
 }
 
-/* GitHub button */
+.project-card p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+/* GitHub button – cute rounded style */
 .btn-github {
   display: inline-block;
-  margin-top: 25px;
-  padding: 12px 26px;
-  border-radius: 30px;
-  border: none;
+  margin-top: 18px;
+  padding: 10px 24px;
+  border-radius: 999px;
   text-decoration: none;
   font-weight: 600;
-  font-size: 15px;
-  background: #05c3ff;
+  font-size: 14px;
+  background: #4c2e73;
   color: #ffffff;
-  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 5px 14px rgba(0, 0, 0, 0.18);
   transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
 }
 
 .btn-github:hover {
-  background: #0492c2;
+  background: #3a2358;
   transform: translateY(-1px);
-  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 9px 22px rgba(0, 0, 0, 0.25);
 }
 
-/* Phase sections */
+/* PHASE SECTIONS */
 
 .phase-section {
-  padding: 60px 8%;
+  padding: 50px 10% 40px;
   text-align: center;
 }
 
-.phase-title {
-  display: inline-block;
-  background: #ffffff;
-  padding: 14px 28px;
-  border-radius: 18px;
-  font-size: 20px;
+.phase-heading {
+  font-size: 22px;
   font-weight: 600;
-  margin-bottom: 30px;
+  display: inline-block;
+  padding: 10px 22px;
+  background: #ffffff;
+  border-radius: 999px;
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  color: #333;
 }
 
 .phase-card {
-  max-width: 1000px;
+  max-width: 950px;
   margin: 0 auto;
   background: #ffffff;
-  border-radius: 18px;
-  padding: 20px;
-  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.12);
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
 }
 
 .phase-card img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 16px;
   display: block;
+  margin-bottom: 14px;
 }
 
-.phase-note {
-  margin-top: 15px;
+.phase-card p {
   color: #555;
   line-height: 1.7;
 }
 
 .phase-intro {
   max-width: 900px;
-  margin: 0 auto 30px;
+  margin: 0 auto 28px;
   color: #555;
   line-height: 1.7;
 }
 
-/* Business ideas cards */
+/* BUSINESS IDEAS – BOXES */
 
 .ideas-row {
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
   justify-content: center;
-  margin-top: 20px;
 }
 
 .idea-card {
-  background: #111111;
-  color: #ffffff;
+  background: #ffffff;
   width: 280px;
   max-width: 100%;
-  padding: 25px;
-  border-radius: 18px;
-  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+  padding: 22px 20px;
+  border-radius: 22px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.13);
   text-align: left;
 }
 
 .idea-card h3 {
   font-size: 18px;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
+  color: #333;
 }
 
 .idea-card h4 {
-  font-size: 15px;
-  margin-bottom: 12px;
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #555;
 }
 
 .idea-card ul {
   padding-left: 18px;
   line-height: 1.6;
   font-size: 14px;
+  color: #555;
 }
 
 .idea-card li {
   margin-bottom: 5px;
 }
 
-/* Small responsive tweak */
+/* RESPONSIVE TWEAKS */
+
 @media (max-width: 768px) {
   .project-hero {
-    padding: 100px 6% 60px;
+    padding: 100px 6% 30px;
+  }
+
+  .project-card {
+    padding: 24px 18px;
   }
 
   .phase-section {
-    padding: 50px 6%;
+    padding: 40px 6% 30px;
   }
 
   .idea-card {
     width: 100%;
   }
 }
+
 
