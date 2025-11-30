@@ -64,7 +64,6 @@ header {
 
 /* ---------- HOME PAGE ---------- */
 
-/* HERO SECTION */
 .hero {
   width: 100%;
   padding: 80px 10%;
@@ -93,7 +92,6 @@ header {
   width: 85%;
 }
 
-/* RIGHT INFO CARD */
 .hero-right {
   display: flex;
   justify-content: flex-end;
@@ -168,7 +166,7 @@ header {
   line-height: 1.7;
 }
 
-/* TEAM SECTION (used on Home + Collabz) */
+/* TEAM SECTION */
 .team {
   padding: 60px 10%;
   text-align: center;
@@ -352,7 +350,7 @@ header {
   margin-bottom: 5px;
 }
 
-/* ---------- MEMBER PAGES (Anoosha / Namrata / Sonika) ---------- */
+/* ---------- MEMBER PAGES ---------- */
 
 .member-section {
   padding: 110px 10% 60px;
@@ -397,7 +395,7 @@ header {
   margin-bottom: 5px;
 }
 
-/* ---------- ABOUT PAGE SECTIONS ---------- */
+/* ---------- ABOUT PAGE ---------- */
 
 .about-hero {
   padding: 110px 10% 50px;
@@ -428,7 +426,7 @@ header {
   margin-bottom: 10px;
 }
 
-/* Meet the Team section */
+/* Meet the Team */
 
 .about-team-section {
   padding: 50px 10% 60px;
@@ -483,7 +481,7 @@ header {
   color: #e5e5e5;
 }
 
-/* ---------- RESPONSIVE TWEAKS ---------- */
+/* ---------- RESPONSIVE ---------- */
 
 @media (max-width: 768px) {
   .navbar {
